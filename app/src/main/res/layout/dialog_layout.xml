@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/farmSizeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Farm Size"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="false"
+        android:inputType="number"
+        android:layout_marginHorizontal="20dp"
+        />
+     <EditText
+        android:id="@+id/farmPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Farm Price"
+        app:layout_constraintTop_toBottomOf="@id/farmSizeEditText"
+         android:layout_marginTop="10dp"
+        android:autofillHints="false"
+        android:inputType="number"
+         android:layout_marginHorizontal="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

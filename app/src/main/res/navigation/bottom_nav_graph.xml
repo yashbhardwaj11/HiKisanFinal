@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_farmingFragment"
+            app:destination="@id/farmingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.MarketFragment"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" />
+    <fragment
+        android:id="@+id/farmingFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.FarmingFragment"
+        android:label="fragment_farming"
+        tools:layout="@layout/fragment_farming" >
+        <action
+            android:id="@+id/action_farmingFragment_to_fillDataFragment"
+            app:destination="@id/fillDataFragment" />
+        <action
+            android:id="@+id/action_farmingFragment_to_viewFarmFragment"
+            app:destination="@id/viewFarmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fundsFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.FundsFragment"
+        android:label="fragment_funds"
+        tools:layout="@layout/fragment_funds" />
+    <fragment
+        android:id="@+id/fillDataFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.FillDataFragment"
+        android:label="fragment_fill_data"
+        tools:layout="@layout/fragment_fill_data" >
+        <action
+            android:id="@+id/action_fillDataFragment_to_farmingFragment"
+            app:destination="@id/farmingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFarmFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.ViewFarmFragment"
+        android:label="fragment_view_farm"
+        tools:layout="@layout/fragment_view_farm" >
+        <action
+            android:id="@+id/action_viewFarmFragment_to_farmingFragment"
+            app:destination="@id/farmingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_buyerFullViewFragment"
+            app:destination="@id/buyerFullViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerFullViewFragment"
+        android:name="com.devinfusion.hikisanfinal.fragment.BuyerFullViewFragment"
+        android:label="fragment_buyer_full_view"
+        tools:layout="@layout/fragment_buyer_full_view" />
+</navigation>

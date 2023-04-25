@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ViewFarmFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farmImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/farm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/farmImage"
+            android:elevation="5dp"
+            android:backgroundTint="#FCF6F5F5"
+            android:id="@+id/main"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nameHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Farmer Name : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="RamKishan"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/nameHelper"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/farmSizeHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Farm Size : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    />
+                <TextView
+                    android:id="@+id/farmSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="20 sqm"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/farmSizeHelper"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    />
+                <TextView
+                    android:id="@+id/soilHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Soil Type : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/farmSize"
+                    />
+                <TextView
+                    android:id="@+id/soil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Sanline"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/soilHelper"
+                    app:layout_constraintTop_toBottomOf="@id/farmSize"
+                    />
+
+                <TextView
+                    android:id="@+id/moistureHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Moisture : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/soil"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/moisture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="92%"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/soil"
+                    app:layout_constraintStart_toEndOf="@id/moistureHelper"
+                    />
+                <TextView
+                    android:id="@+id/priceHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Farm Price : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/moistureHelper"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="$30"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/moistureHelper"
+                    app:layout_constraintStart_toEndOf="@id/priceHelper"
+                    />
+                <TextView
+                    android:id="@+id/totalPriceHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Total Price : "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/priceHelper"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="$3000 "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/price"
+                    app:layout_constraintStart_toEndOf="@id/totalPriceHelper"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buyBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Bid"
+            app:layout_constraintTop_toBottomOf="@id/main"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

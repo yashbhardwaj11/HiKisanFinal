@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:elevation="4dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farmImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="RamKishan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/farmImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/farmSizeHelperTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Farm Size"
+            android:textColor="@color/main"
+            app:layout_constraintStart_toEndOf="@id/farmImage"
+            app:layout_constraintTop_toBottomOf="@id/fameName" />
+
+        <TextView
+            android:id="@+id/farmSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:text="30"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/farmImage"
+            app:layout_constraintTop_toBottomOf="@id/farmSizeHelperTT" />
+
+        <TextView
+            android:id="@+id/farmPriceHelperTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Farm Price per sq"
+            android:textColor="@color/main"
+            app:layout_constraintStart_toEndOf="@id/farmSizeHelperTT"
+            app:layout_constraintTop_toBottomOf="@id/fameName" />
+
+        <TextView
+            android:id="@+id/farmPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="$3.50"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/farmPriceHelperTT"
+            app:layout_constraintStart_toStartOf="@id/farmPriceHelperTT"
+            />
+
+        <ImageView
+            android:id="@+id/locationHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toStartOf="@id/farmPriceHelperTT"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/farmLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/locationHelper"
+            app:layout_constraintTop_toTopOf="@id/locationHelper"
+            app:layout_constraintBottom_toBottomOf="@id/locationHelper"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:text="New Delhi"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
